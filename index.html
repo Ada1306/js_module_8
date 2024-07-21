@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div data-widget-name="menu">Виберіть жанр</div>
+<script defer>
+  // Знайти елемент з атрибутом data-widget-name
+  var widgetElement = document.querySelector('[data-widget-name]');
+  
+  // Перевірити, чи елемент знайдено
+  if (widgetElement) {
+    // Прочитати значення атрибута data-widget-name
+    var widgetName = widgetElement.getAttribute('data-widget-name');
+    
+    // Вивести значення в консоль
+    console.log(widgetName);
+  } else {
+    console.error('Елемент з атрибутом data-widget-name не знайдено');
+  }
+</script>
+</body>
+</html>
